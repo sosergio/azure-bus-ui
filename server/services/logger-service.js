@@ -1,5 +1,5 @@
 const fs = require('fs')
-const logPath = '../log.txt';
+const logPath = 'log.txt';
 
 function loggify(msg){
     return `[${new Date().toISOString()}] ${msg}`;
