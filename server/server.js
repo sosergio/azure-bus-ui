@@ -4,7 +4,7 @@ const path = require('path');
 const http = require('http');
 const bodyParser = require('body-parser');
 const PORT = process.env.PORT || '5001';
-const UI_DIST_FOLDER = path.join(__dirname, '../ui/dist');
+const UI_DIST_FOLDER = path.join(__dirname, '../ui-dist');
 
 // Get our routes
 const api = require('./routes/api');
