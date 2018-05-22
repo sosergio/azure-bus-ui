@@ -58,3 +58,4 @@
 [2018-05-22T09:19:55.546Z] AzureService | getMessage: archives charge_session_in_progress
 [2018-05-22T09:19:58.281Z] AzureService | getMessage: archives charge_session_in_progress
 [2018-05-22T09:20:00.768Z] AzureService | getMessage: archives charge_session_in_progress
+[2018-05-22T09:21:47.067Z] AzureService | getMessage: archives charging_sites_delete

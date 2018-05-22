@@ -8,7 +8,7 @@ var msRest = require('ms-rest');
 let __NAMESPACE = "emobility-dev";
 let __RESOURCE_GROUP_NAME = "emobility-dev";
 let __SUBSCRIPTION_ID = "9a932847-7c35-485e-bb5c-8994d756e8cd";
-let __ACCESSKEY = "Endpoint=sb://emobility-dev.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=7cxcLgz19bR7rzZuYbZb1cDVGl7MDwBLUzoQTXCLINU=";
+let __ACCESSKEY = "";
 
 
 function log(msg) {
