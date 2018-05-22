@@ -1,9 +1,27 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
+<div *ngIf="!token">
+  <a href="#" (click)="login()">Login</a>
+  <div *ngIf="loginObj?.message" [innerHtml]="urlify(loginObj?.message)"></div>
+</div>
+<div *ngIf="token">
+  <p>Token: {{token.substring(0,10)}}...</p>
+  <a href="#" (click)="getData()">Load topics</a>
+  <div *ngFor="let topic of data">
+    {{topic.name}}
+    <a href="#" (click)="loadSubscriptions(topic)">Load subscriptions</a>
 
-  </h1>
-  <p>
-    data is: {{data|json}}
-  </p>
+    <table>
+      <tr *ngFor="let s of topic.subscriptions">
+        <td>{{s.name}}</td>
+        <td>active: {{s.countDetails.activeMessageCount}}</td>
+        <td>dead letter: {{s.countDetails.deadLetterMessageCount}}</td>
+        <td>
+            <a href="#" (click)="receiveSubscriptionMessage(topic,s)">Receive message</a>
+            <br>
+            <pre>{{s.message | json}}</pre>
+        </td>
+      </tr>
+    </table>
+
+  </div>
 </div>

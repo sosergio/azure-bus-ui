@@ -1,0 +1,60 @@
+[2018-05-22T09:09:08.718Z] APP STARTED[2018-05-22T09:09:08.729Z] Server started on 5001
+[2018-05-22T09:09:12.407Z] AzureService | login
+[2018-05-22T09:09:17.665Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:09:22.660Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:09:27.664Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:09:32.662Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:09:37.661Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:09:42.663Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:09:45.546Z] AzureService | getAllTopics: 
+[2018-05-22T09:09:49.210Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-22T09:09:51.540Z] AzureService | getMessage: test cpms_ocpp_message
+[2018-05-22T09:10:07.153Z] AzureService | getMessage: test cpms_ocpp_message
+[2018-05-22T09:11:13.572Z] AzureService | login
+[2018-05-22T09:11:18.761Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:11:23.754Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:11:28.754Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:11:33.756Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:11:36.073Z] AzureService | getAllTopics: 
+[2018-05-22T09:11:39.336Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-22T09:11:43.115Z] AzureService | getMessage: test cpms_ocpp_message
+[2018-05-22T09:11:50.756Z] AzureService | getMessage: test cpms_ocpp_message
+[2018-05-22T09:11:51.947Z] AzureService | getMessage: test cpms_ocpp_message
+[2018-05-22T09:11:57.593Z] AzureService | getMessage: test cpms_ocpp_message
+[2018-05-22T09:16:29.807Z] AzureService | login
+[2018-05-22T09:16:34.976Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:16:39.976Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:16:44.977Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:16:50.833Z] AzureService | login
+[2018-05-22T09:16:56.051Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:17:01.052Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:17:06.051Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:17:11.051Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:17:16.052Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:17:17.712Z] AzureService | getAllTopics: 
+[2018-05-22T09:17:28.691Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-22T09:17:32.110Z] AzureService | getMessage: test cpms_ocpp_message
+[2018-05-22T09:18:14.894Z] AzureService | getMessage: test cpms_ocpp_message
+[2018-05-22T09:19:01.984Z] AzureService | login
+[2018-05-22T09:19:07.188Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:19:12.183Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:19:17.187Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:19:22.184Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:19:27.184Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-22T09:19:29.143Z] AzureService | getAllTopics: 
+[2018-05-22T09:19:32.698Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-22T09:19:34.634Z] AzureService | getMessage: test cpms_ocpp_message
+[2018-05-22T09:19:37.163Z] AzureService | getMessage: test cpms_ocpp_message
+[2018-05-22T09:19:38.459Z] AzureService | getMessage: test cpms_ocpp_message
+[2018-05-22T09:19:39.279Z] AzureService | getMessage: test cpms_ocpp_message
+[2018-05-22T09:19:39.978Z] AzureService | getMessage: reports cpms_ocpp_message
+[2018-05-22T09:19:41.135Z] AzureService | getMessage: reports cpms_ocpp_message
+[2018-05-22T09:19:41.674Z] AzureService | getMessage: reports cpms_ocpp_message
+[2018-05-22T09:19:42.552Z] AzureService | getMessage: test cpms_ocpp_message
+[2018-05-22T09:19:42.991Z] AzureService | getMessage: test cpms_ocpp_message
+[2018-05-22T09:19:44.363Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-22T09:19:47.055Z] AzureService | getMessage: archives charging_sites_delete
+[2018-05-22T09:19:53.625Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-22T09:19:55.546Z] AzureService | getMessage: archives charge_session_in_progress
+[2018-05-22T09:19:58.281Z] AzureService | getMessage: archives charge_session_in_progress
+[2018-05-22T09:20:00.768Z] AzureService | getMessage: archives charge_session_in_progress

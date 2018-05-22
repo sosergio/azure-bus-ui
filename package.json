@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "azure": "2.2.1-preview",
+    "azure-arm-sb": "2.2.0-preview",
     "express": "4.16.3"
   }
 }
