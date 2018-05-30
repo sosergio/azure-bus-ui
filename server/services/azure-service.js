@@ -147,6 +147,38 @@ var service = {
         });
     },
 
+    addSubscriptionToTopic: function (token, subscription, resourceGroup, namespace, topic, subName) {
+        log(`addSubscriptionToTopic: ${subscription} ${resourceGroup} ${namespace} ${topic} ${subName}`);
+        return new Promise(function (resolve, reject) {
+            let tk = new msRest.TokenCredentials(token);
+            var client = new azureArmSb.ServiceBusManagementClient(tk, subscription);
+            client.subscriptions.createOrUpdate(resourceGroup,  namespace,  topic, subName, {
+                
+            })
+                .then(subscriptions => {
+                        resolve(subscriptions);
+                    },
+                    err =>
+                    log(err)
+                );
+        });
+    },
+
+    deleteSubscriptionToTopic: function (token, subscription, resourceGroup, namespace, topic, subName) {
+        log(`deleteSubscriptionToTopic: ${subscription} ${resourceGroup} ${namespace} ${topic} ${subName}`);
+        return new Promise(function (resolve, reject) {
+            let tk = new msRest.TokenCredentials(token);
+            var client = new azureArmSb.ServiceBusManagementClient(tk, subscription);
+            client.subscriptions.deleteMethod(resourceGroup,  namespace,  topic, subName)
+                .then(() => {
+                        resolve('{"body":null}');
+                    },
+                    err =>
+                    log(err)
+                );
+        });
+    },
+
     receiveSubscriptionMessage: function (connectionString, topic, subscriptionName) {
         log(`getMessage: ${subscriptionName} ${topic}`);
         return new Promise(function (resolve, reject) {

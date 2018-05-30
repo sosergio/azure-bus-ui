@@ -57,6 +57,28 @@ router.get('/azure/subscriptions/:subscription/resource-groups/:resourceGroup/na
         res.send(r), err => res.sendStatus(err.statusCode || 500));
 });
 
+router.post('/azure/subscriptions/:subscription/resource-groups/:resourceGroup/namespaces/:namespace/topics/:topicName/subscriptions', (req, res) => {
+    let cs = req.headers['x-azure-token'];
+    let subscription = req.params.subscription;
+    let topicName = req.params.topicName;
+    let namespace = req.params.namespace;
+    let resourceGroup = req.params.resourceGroup;
+    let subscriptionName = req.body.name;
+    azureService.addSubscriptionToTopic(cs, subscription, resourceGroup, namespace, topicName, subscriptionName).then(r =>
+        res.send(r), err => res.sendStatus(err.statusCode || 500));
+});
+
+router.delete('/azure/subscriptions/:subscription/resource-groups/:resourceGroup/namespaces/:namespace/topics/:topicName/subscriptions/:subscriptionName', (req, res) => {
+    let cs = req.headers['x-azure-token'];
+    let subscription = req.params.subscription;
+    let topicName = req.params.topicName;
+    let namespace = req.params.namespace;
+    let resourceGroup = req.params.resourceGroup;
+    let subscriptionName = req.params.subscriptionName;
+    azureService.deleteSubscriptionToTopic(cs, subscription, resourceGroup, namespace, topicName, subscriptionName).then(r =>
+        res.send(r), err => res.sendStatus(err.statusCode || 500));
+});
+
 router.get('/azure/subscriptions/:subscription/resource-groups/:resourceGroup/namespaces/:namespace/topics/:topicName/subscriptions/:subscriptionName/message', async (req, res) => {
     let cs = req.headers['x-azure-cs'];
     let subscription = req.params.subscription;

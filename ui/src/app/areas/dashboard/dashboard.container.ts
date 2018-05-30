@@ -11,6 +11,7 @@ import { environment } from '../../../environments/environment';
 import { HttpHeaders } from '@angular/common/http';
 import { UserContextService } from '../../common/services/user-context.service';
 import { Observable } from 'rxjs/Observable';
+import { DialogsService } from '../../common/services/dialogs.service';
 
 @Component({
   selector: 'dashboard',
@@ -22,7 +23,10 @@ export class DashboardContainer {
   selectedTopic: any;
   uc: UserContext;
   tab = 1;
-  constructor(private http: HttpClient, private userContextService: UserContextService) {
+  newSubscrptionName: string;
+  showNewSubscriptionNameForm = false;
+
+  constructor(private http: HttpClient, private userContextService: UserContextService, private dialogsService: DialogsService) {
     this.uc = this.userContextService.get();
 
     this.loadTopics();
@@ -67,9 +71,41 @@ export class DashboardContainer {
     this.http.get(`${this.namespaceApi}/topics/${topic.name}/subscriptions/${subscription.name}/message`, {
       headers: headers
     }).subscribe(s => {
-      if (s['body']) {
+      if (s && s['body']) {
         const json = JSON.parse(s['body']);
         subscription.message = json;
+      } else {
+        subscription.message = 'no message';
+      }
+    });
+  }
+
+  showNewSubscriptionModal() {
+    this.dialogsService.prompt('New Subscription', 'Name').subscribe(ans => {
+      if (ans) {
+        let headers = new HttpHeaders().set('Content-Type', 'application/json');
+        headers = headers.set('x-azure-token', this.uc.accessToken);
+        this.http.post(`${this.namespaceApi}/topics/${this.selectedTopic.name}/subscriptions`, {
+          name: ans
+        }, {
+            headers: headers
+          }).subscribe(s => {
+            this.loadSubscriptions(this.selectedTopic);
+          });
+      }
+    });
+  }
+
+  onDeleteSubscriptionClick(subscriptionName: string) {
+    this.dialogsService.confirm('Delete Subscription', `Are you sure you want to delete '${subscriptionName}'`).subscribe(ans => {
+      if (ans) {
+        let headers = new HttpHeaders().set('Content-Type', 'application/json');
+        headers = headers.set('x-azure-token', this.uc.accessToken);
+        this.http.delete(`${this.namespaceApi}/topics/${this.selectedTopic.name}/subscriptions/${subscriptionName}`, {
+            headers: headers
+          }).subscribe(() => {
+            this.loadSubscriptions(this.selectedTopic);
+          });
       }
     });
   }

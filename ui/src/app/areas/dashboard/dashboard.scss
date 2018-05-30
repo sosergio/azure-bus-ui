@@ -56,5 +56,19 @@
     .content-panel-inner {
       padding: $padding-natural;
     }
+
+    table.message-count{
+      margin:$padding-natural/2 0;
+      td{
+        border:1px solid $hr-bg;
+        padding:$padding-natural/2;
+      }
+    }
+
+    .json-message{
+      margin-top:$padding-natural/2;
+      max-height: 300px;
+      overflow: auto;
+    }
   }
 }

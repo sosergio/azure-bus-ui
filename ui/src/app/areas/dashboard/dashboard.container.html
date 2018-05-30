@@ -22,22 +22,39 @@
     <div class="content-panel" *ngIf="selectedTopic">
       <dcas-page-header [title]="selectedTopic?.name">
         <a class="button tab" [ngClass]="{active:tab==1}" (click)="tab=1">
-          <span class="material-icons">mail_outline</span>Subscriptions</a>
+          <span class="material-icons">device_hub</span>Subscriptions</a>
         <a class="button tab" [ngClass]="{active:tab==2}" (click)="tab=2">
           <span class="material-icons">code</span>Properties</a>
       </dcas-page-header>
       <div class="content-panel-inner" *ngIf="tab==1">
-        <button (click)="loadSubscriptions(selectedTopic)" class="button primary small" ><span class="material-icons">refresh</span>Refresh</button>
-        <button class="button secondary small" ><span class="material-icons">add</span>Add New</button>
+        <button (click)="loadSubscriptions(selectedTopic)" class="button primary small">
+          <span class="material-icons">refresh</span>Refresh</button>
+        <button class="button secondary small" (click)="showNewSubscriptionModal()">
+          <span class="material-icons">add</span>Add New</button>
         <hr>
         <div class="subscription-area" *ngFor="let s of selectedTopic.subscriptions">
           <h4>{{s.name}}</h4>
-          <div>active: {{s.countDetails.activeMessageCount}}</div>
-          <div>dead letter: {{s.countDetails.deadLetterMessageCount}}</div>
+          <table class="message-count">
+            <tr>
+              <td>activeMessageCount</td>
+              <td>{{s.countDetails.activeMessageCount}}</td>
+              <td>deadLetterMessageCount</td>
+              <td>{{s.countDetails.deadLetterMessageCount}}</td>
+            </tr>
+            <tr>
+              <td>scheduledMessageCount</td>
+              <td>{{s.countDetails.scheduledMessageCount}}</td>
+              <td>transferMessageCount</td>
+              <td>{{s.countDetails.transferMessageCount}}</td>
+            </tr>
+          </table>
           <div>
-            <a (click)="receiveSubscriptionMessage(selectedTopic,s)">Receive message</a>
+            <button class="button secondary small" (click)="receiveSubscriptionMessage(selectedTopic,s)">
+              <span class="material-icons">call_received</span>Receive message</button>
+            <button class="button secondary small" (click)="onDeleteSubscriptionClick(s.name)">
+              <span class="material-icons">delete_outline</span>Delete</button>
             <br>
-            <pre *ngIf="s.message">{{s.message | json}}</pre>
+            <pre class="json-message" *ngIf="s.message">{{s.message | json}}</pre>
           </div>
           <hr>
         </div>
