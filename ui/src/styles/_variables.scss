@@ -1,0 +1,50 @@
+//Custom Media Query Variables
+$breakpoint-sm: '(max-width: 600px)' !default;
+$breakpoint-md: '(min-width: 601px) and (max-width: 992px)' !default;
+$breakpoint-lg: '(min-width: 993px)' !default;
+//fonts families
+$font-family-default:'Open Sans', sans-serif;
+
+//fonts sizes
+$font-size-tiny:5pt;
+$font-size-small:9pt;
+$font-size-default:11pt;
+$font-size-big:13pt;
+$font-size-huge:18pt;
+$font-size-humongous:20pt;
+$font-size-visible-from-moon:25pt;
+//colors generic
+$color-text-default:#4D4E4F;
+$color-text-light:#6E6F6F;
+$color-text-extra-light:#95989A;
+$color-text-inverse:#fff;
+$color-text-inverse-light:darken($color-text-inverse, 10%);
+$color-text-inverse-extra-light:darken($color-text-inverse, 40%);
+$color-error:#F44336;
+$color-error-heavy:#B71C1C;
+$color-success:#4CAF50;
+$color-success-heavy:#1B5E20;
+$color-primary:#0960CD;
+$color-secondary:#ECEFF1;
+
+//material colors
+$div-primary:#3674EB;
+$div-primary:#1399E6;
+$div-bg-light:#FFE0B2;
+$div-bg:#CFD8DC;
+$div-bg-heavy:#2E2E2E;
+$hr-bg:#EBEEED;
+$div-bg-extra-light:#fff;
+$div-bg-extra-heavy:#1C1C1C;
+$div-bg-light:#f2f2f2;
+$div-bg-max-heavy:#000;
+//element specific shared variables
+$shell-nav-lg-width:300px;
+//padding
+$padding-natural:20px;
+//heights
+$height-headers:100px;
+$height-button-big:56px;
+$height-button-normal:40px;
+$height-button-small:30px;
+

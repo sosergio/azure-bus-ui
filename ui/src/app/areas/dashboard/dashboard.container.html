@@ -1,0 +1,51 @@
+<main>
+  <div *ngIf="isLoading">
+    <div class="app-loading">
+      <h2>loading topics...</h2>
+      <div class="spinner"></div>
+    </div>
+  </div>
+  <div class="split-panel" *ngIf="!isLoading">
+    <div class="left-panel">
+      <div class="section-head">
+        <h3>TOPICS</h3>
+        <a class="button secondary small" (click)="loadTopics()">
+          <span class="material-icons">refresh</span>Refresh</a>
+      </div>
+      <div class="list">
+        <div class="list-empty" *ngIf="!topics || topics.length ==0">No topics found</div>
+        <a *ngFor="let topic of topics" (click)="onTopicClick(topic)" [ngClass]="{'active':selectedTopic?.name === topic.name}">
+          {{topic.name}}
+        </a>
+      </div>
+    </div>
+    <div class="content-panel" *ngIf="selectedTopic">
+      <dcas-page-header [title]="selectedTopic?.name">
+        <a class="button tab" [ngClass]="{active:tab==1}" (click)="tab=1">
+          <span class="material-icons">mail_outline</span>Subscriptions</a>
+        <a class="button tab" [ngClass]="{active:tab==2}" (click)="tab=2">
+          <span class="material-icons">code</span>Properties</a>
+      </dcas-page-header>
+      <div class="content-panel-inner" *ngIf="tab==1">
+        <button (click)="loadSubscriptions(selectedTopic)" class="button primary small" ><span class="material-icons">refresh</span>Refresh</button>
+        <button class="button secondary small" ><span class="material-icons">add</span>Add New</button>
+        <hr>
+        <div class="subscription-area" *ngFor="let s of selectedTopic.subscriptions">
+          <h4>{{s.name}}</h4>
+          <div>active: {{s.countDetails.activeMessageCount}}</div>
+          <div>dead letter: {{s.countDetails.deadLetterMessageCount}}</div>
+          <div>
+            <a (click)="receiveSubscriptionMessage(selectedTopic,s)">Receive message</a>
+            <br>
+            <pre *ngIf="s.message">{{s.message | json}}</pre>
+          </div>
+          <hr>
+        </div>
+
+      </div>
+      <div class="content-panel-inner" *ngIf="tab==2">
+        <pre>{{selectedTopic| json}}</pre>
+      </div>
+    </div>
+  </div>
+</main>

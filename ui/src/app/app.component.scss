@@ -1,0 +1,16 @@
+/* new menu styles */
+
+body,
+html,
+main {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: darken($div-bg-extra-light, 2%);
+}
+
+@media #{$breakpoint-lg} {}
+
+@import "./common/common";
+@import "./areas/dashboard/dashboard";
+@import "./areas/app-header/app-header";

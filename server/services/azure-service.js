@@ -2,14 +2,10 @@
 const logger = require('./logger-service');
 var azure = require('azure');
 var azureArmSb = require('azure-arm-sb');
+var azureSb = require('azure-sb');
 var msRestAzure = require('ms-rest-azure');
+var azureArmResource = require('azure-arm-resource');
 var msRest = require('ms-rest');
-
-let __NAMESPACE = "emobility-dev";
-let __RESOURCE_GROUP_NAME = "emobility-dev";
-let __SUBSCRIPTION_ID = "9a932847-7c35-485e-bb5c-8994d756e8cd";
-let __ACCESSKEY = "";
-
 
 function log(msg) {
     logger.log(`AzureService | ${msg}`);
@@ -18,6 +14,7 @@ function log(msg) {
 let __logins = [];
 
 var service = {
+
     login: function () {
         log("login");
         let newLogin = {
@@ -41,34 +38,106 @@ var service = {
             });
         });
     },
+
     getAccessTokenByLoginId: function (id) {
         log("getAccessTokenByLoginId: ", id);
         return new Promise(function (resolve, reject) {
             resolve(__logins.find(l => l.id == id));
         });
     },
-    getAllTopics: function (token) {
-        log("getAllTopics: ", token);
+
+    getUserSubscriptions: function (token) {
+        log(`getUserSubscriptions: `);
+        return new Promise(function (resolve, reject) {
+            try {
+                let tk = new msRest.TokenCredentials(token);
+                var subClient = new azureArmResource.SubscriptionClient(tk);
+
+                subClient.subscriptions.list()
+                    .then(subs => {
+                            resolve(subs);
+                        },
+                        err => {
+                            log(err);
+                            reject(err);
+                        }
+                    );
+            } catch (err) {
+                log(err);
+                reject(err);
+            }
+        });
+    },
+
+    getResourceGroups: function (token, subscription) {
+        log(`getResourceGroups: `);
+        return new Promise(function (resolve, reject) {
+            try {
+                let tk = new msRest.TokenCredentials(token);
+                var resourceClient = new azureArmResource.ResourceManagementClient(tk, subscription);
+
+                resourceClient.resourceGroups.list()
+                    .then(resources => {
+                            resolve(resources);
+                        },
+                        err => {
+                            log(err);
+                            reject(err);
+                        }
+                    );
+            } catch (err) {
+                log(err);
+                reject(err);
+            }
+        });
+    },
+
+    getNamespaces: function (token, subscription, resourceGroup) {
+        log(`getNamespaces: ${resourceGroup}`);
         return new Promise(function (resolve, reject) {
             let tk = new msRest.TokenCredentials(token);
-            var client = new azureArmSb.ServiceBusManagementClient(tk, __SUBSCRIPTION_ID);
+            var client = new azureArmSb.ServiceBusManagementClient(tk, subscription);
+            try {
+                client.namespaces.listByResourceGroup(resourceGroup)
+                    .then(namespaces => {
+                            resolve(namespaces);
+                        },
+                        err => {
+                            log(err);
+                            reject(err);
+                        }
+                    );
+            } catch (err) {
+                log(err);
+                reject(err);
+            }
+        });
+    },
 
-            client.topics.listByNamespace(__RESOURCE_GROUP_NAME, __NAMESPACE)
+    getAllTopics: function (token, subscription, resourceGroup, namespace) {
+        log(`getAllTopics: ${resourceGroup} ${namespace}`);
+        return new Promise(function (resolve, reject) {
+            let tk = new msRest.TokenCredentials(token);
+            var client = new azureArmSb.ServiceBusManagementClient(tk, subscription);
+            client.topics.listByNamespace(resourceGroup, namespace)
                 .then(topics => {
                         resolve(topics);
                     },
-                    err =>
-                    log(err)
+                    err => {
+                        log(err);
+                        reject(err);
+                    }
                 );
         });
     },
-    getSubscriptionsByTopic: function (token, topic) {
+
+    getSubscriptionsByTopic: function (token, subscription, resourceGroup, namespace, topic) {
         log("getSubscriptionsByTopic: ", token);
         return new Promise(function (resolve, reject) {
             let tk = new msRest.TokenCredentials(token);
-            var client = new azureArmSb.ServiceBusManagementClient(tk, __SUBSCRIPTION_ID);
-
-            client.subscriptions.listByTopic(__RESOURCE_GROUP_NAME, __NAMESPACE, topic)
+            var client = new azureArmSb.ServiceBusManagementClient(tk, subscription);
+            
+            client.subscriptions.listByTopic(resourceGroup, namespace, topic)
                 .then(subscriptions => {
                         resolve(subscriptions);
                     },
@@ -77,26 +146,12 @@ var service = {
                 );
         });
     },
-    getNamespaces: function (token) {
-        log("getNamespaces: ", token);
-        return new Promise(function (resolve, reject) {
-            let tk = new msRest.TokenCredentials(token);
-            var client = new azureArmSb.ServiceBusManagementClient(tk, __SUBSCRIPTION_ID);
 
-            client.namespaces.listByResourceGroup(__RESOURCE_GROUP_NAME)
-                .then(namespaces => {
-                        resolve(namespaces);
-                    },
-                    err =>
-                    log(err)
-                );
-        });
-    },
-    receiveSubscriptionMessage: function (topic, subscriptionName) {
+    receiveSubscriptionMessage: function (connectionString, topic, subscriptionName) {
         log(`getMessage: ${subscriptionName} ${topic}`);
         return new Promise(function (resolve, reject) {
-            let azureSbService = azure.createServiceBusService(__ACCESSKEY);
-            azureSbService.receiveSubscriptionMessage(topic, subscriptionName, function (error, receivedMessage) {
+            var client = new azureSb.ServiceBusService(connectionString);
+            client.receiveSubscriptionMessage(topic, subscriptionName, function (error, receivedMessage) {
                 if (error) {
                     reject(error);
                 } else {

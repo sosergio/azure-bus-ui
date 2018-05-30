@@ -1,0 +1,76 @@
+{
+  "id": "1b7235de-780a-42fe-a883-833d7c05ef45",
+  "createdTime": "2018-05-24T14:16:09.9314794+00:00",
+  "updatedTime": "2018-05-24T14:16:19.9834429+00:00",
+  "inProgressStartTime": "2018-05-24T14:16:19.8876129+00:00",
+  "status": 3,
+  "user": {
+    "id": "auth0|5a006e01f4401d01bab146bf",
+    "name": "Se So",
+    "email": "instract.ltd@gmail.com"
+  },
+  "transaction": {
+    "id": "69a35d37-7330-3349-1c7c-06ebaefd70fe",
+    "chargePointId": "9f773ab3-9126-5a58-7406-7e2aa6bced62",
+    "connectorId": 1,
+    "status": "InProgress",
+    "metersWhStart": 31830,
+    "metersWhStop": 0,
+    "metersWh": 0,
+    "chargingProfile": {
+      "chargingProfileId": 1,
+      "transactionId": 1527171369577,
+      "stackLevel": 1,
+      "chargingProfilePurpose": "TxProfile",
+      "chargingProfileKind": "Relative",
+      "chargingSchedule": {
+        "chargingRateUnit": "W",
+        "chargingSchedulePeriod": [
+          {
+            "startPeriod": 0,
+            "limit": 7000
+          }
+        ]
+      }
+    }
+  },
+  "chargingSite": {
+    "id": "c3d141b0-2adf-4c40-9244-8b7823c18348",
+    "name": "UC San Diego",
+    "address": "9500 Gilman Drive, La Jolla, CA, 92093, USA",
+    "pricingPolicy": {
+      "type": "Free",
+      "pricePerKWh": 0
+    },
+    "isPaymentOn": false,
+    "ratePlanId": "PGE-A6"
+  },
+  "chargingProfile": {
+    "plugInTime": "2018-05-24T14:16:19.8878322+00:00",
+    "plugOutTime": "2018-05-24T20:16:08+00:00",
+    "initialMileage": 1,
+    "desiredMileage": 31,
+    "initialStateOfCharge": 0.009333333333333334,
+    "requiredCharge": 0.2893333333333334,
+    "vehicleType": {
+      "make": "Azure Dynamics",
+      "model": "Transit Connect Electric Wagon",
+      "year": 2012,
+      "batterySize": 30,
+      "specialEV": false
+    }
+  },
+  "vehicle": {
+    "make": "Azure Dynamics",
+    "model": "Transit Connect Electric Wagon",
+    "year": 2012,
+    "batterySize": 30,
+    "specialEV": false
+  },
+  "currentCost": {
+    "amount": 0,
+    "discount": 0,
+    "currency": 0
+  },
+  "initiatedBy": "auth0|5a006e01f4401d01bab146bf"
+}

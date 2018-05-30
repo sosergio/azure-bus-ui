@@ -1,0 +1,11 @@
+<main class="container-fluid">
+  <h2>Login</h2>
+  <hr>
+  <div class="row" *ngIf="!formSubmitted">
+    <div class="form-group col-xs-12 col-lg-8">
+      <button class="button primary" (click)="loginClick()">
+        <span class="material-icons">done</span>Login</button>
+    </div>
+  </div>
+  <div *ngIf="loginResponse?.message" [innerHtml]="urlify(loginResponse?.message)"></div>
+</main>

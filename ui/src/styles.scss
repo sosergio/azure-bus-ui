@@ -1,0 +1,11 @@
+//variables
+@import './styles/variables';
+
+//third parties
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+//app base styles
+@import './styles/app';
+
+//initial component style
+@import './app/app.component.scss';

@@ -1,0 +1,86 @@
+{
+    "chargingSite": {
+        "maxPowerDrawKw": 0,
+        "buildingLoadKw": [],
+        "tariffs": null
+    },
+    "sessions": [{
+        "sessionId": "f8757ba4-e284-447f-92a1-e1d8987adb53",
+        "status": "InProgress",
+        "transaction": {
+            "id": "81bff289-8b3d-bdb2-4694-471e314cc7e2",
+            "chargePointId": "9f773ab3-9126-5a58-7406-7e2aa6bced62",
+            "maxChargingRate": 0.0,
+            "chargingRateUnit": null,
+            "meterskWh": 0,
+            "connectorId": 1,
+            "chargingProfile": {
+                "chargingProfileId": 1,
+                "transactionId": 1527179473635,
+                "stackLevel": 1,
+                "chargingProfilePurpose": "TxProfile",
+                "chargingProfileKind": "Relative",
+                "chargingSchedule": {
+                    "startSchedule": null,
+                    "chargingRateUnit": "W",
+                    "chargingSchedulePeriod": [{
+                        "startPeriod": 0,
+                        "numberPhases": null,
+                        "limit": 7000
+                    }]
+                }
+            }
+        },
+        "userRequirements": {
+            "plugInTime": "2018-05-24T17:31:31.9233401+01:00",
+            "plugOutTime": "2018-05-24T23:31:10+01:00",
+            "initialMileage": 1,
+            "desiredMileage": 31,
+            "initialStateOfCharge": 0.0093333333333333341,
+            "requiredCharge": 0.28933333333333339
+        },
+        "vehicle": {
+            "batterySize": 30,
+            "chargeRate": 0
+        }
+    }, {
+        "sessionId": "f8757ba4-e284-447f-92a1-e1d8987adb53",
+        "status": "InProgress",
+        "transaction": {
+            "id": "81bff289-8b3d-bdb2-4694-471e314cc7e2",
+            "chargePointId": "9f773ab3-9126-5a58-7406-7e2aa6bced62",
+            "maxChargingRate": 0.0,
+            "chargingRateUnit": null,
+            "meterskWh": 0,
+            "connectorId": 1,
+            "chargingProfile": {
+                "chargingProfileId": 1,
+                "transactionId": 1527179473635,
+                "stackLevel": 1,
+                "chargingProfilePurpose": "TxProfile",
+                "chargingProfileKind": "Relative",
+                "chargingSchedule": {
+                    "startSchedule": null,
+                    "chargingRateUnit": "W",
+                    "chargingSchedulePeriod": [{
+                        "startPeriod": 0,
+                        "numberPhases": null,
+                        "limit": 7000
+                    }]
+                }
+            }
+        },
+        "userRequirements": {
+            "plugInTime": "2018-05-24T17:31:31.9233401+01:00",
+            "plugOutTime": "2018-05-24T23:31:10+01:00",
+            "initialMileage": 1,
+            "desiredMileage": 31,
+            "initialStateOfCharge": 0.0093333333333333341,
+            "requiredCharge": 0.28933333333333339
+        },
+        "vehicle": {
+            "batterySize": 30,
+            "chargeRate": 0
+        }
+    }]
+}

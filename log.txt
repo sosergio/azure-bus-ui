@@ -1,61 +1,161 @@
-[2018-05-22T09:09:08.718Z] APP STARTED[2018-05-22T09:09:08.729Z] Server started on 5001
-[2018-05-22T09:09:12.407Z] AzureService | login
-[2018-05-22T09:09:17.665Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:09:22.660Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:09:27.664Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:09:32.662Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:09:37.661Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:09:42.663Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:09:45.546Z] AzureService | getAllTopics: 
-[2018-05-22T09:09:49.210Z] AzureService | getSubscriptionsByTopic: 
-[2018-05-22T09:09:51.540Z] AzureService | getMessage: test cpms_ocpp_message
-[2018-05-22T09:10:07.153Z] AzureService | getMessage: test cpms_ocpp_message
-[2018-05-22T09:11:13.572Z] AzureService | login
-[2018-05-22T09:11:18.761Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:11:23.754Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:11:28.754Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:11:33.756Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:11:36.073Z] AzureService | getAllTopics: 
-[2018-05-22T09:11:39.336Z] AzureService | getSubscriptionsByTopic: 
-[2018-05-22T09:11:43.115Z] AzureService | getMessage: test cpms_ocpp_message
-[2018-05-22T09:11:50.756Z] AzureService | getMessage: test cpms_ocpp_message
-[2018-05-22T09:11:51.947Z] AzureService | getMessage: test cpms_ocpp_message
-[2018-05-22T09:11:57.593Z] AzureService | getMessage: test cpms_ocpp_message
-[2018-05-22T09:16:29.807Z] AzureService | login
-[2018-05-22T09:16:34.976Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:16:39.976Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:16:44.977Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:16:50.833Z] AzureService | login
-[2018-05-22T09:16:56.051Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:17:01.052Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:17:06.051Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:17:11.051Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:17:16.052Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:17:17.712Z] AzureService | getAllTopics: 
-[2018-05-22T09:17:28.691Z] AzureService | getSubscriptionsByTopic: 
-[2018-05-22T09:17:32.110Z] AzureService | getMessage: test cpms_ocpp_message
-[2018-05-22T09:18:14.894Z] AzureService | getMessage: test cpms_ocpp_message
-[2018-05-22T09:19:01.984Z] AzureService | login
-[2018-05-22T09:19:07.188Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:19:12.183Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:19:17.187Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:19:22.184Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:19:27.184Z] AzureService | getAccessTokenByLoginId: 
-[2018-05-22T09:19:29.143Z] AzureService | getAllTopics: 
-[2018-05-22T09:19:32.698Z] AzureService | getSubscriptionsByTopic: 
-[2018-05-22T09:19:34.634Z] AzureService | getMessage: test cpms_ocpp_message
-[2018-05-22T09:19:37.163Z] AzureService | getMessage: test cpms_ocpp_message
-[2018-05-22T09:19:38.459Z] AzureService | getMessage: test cpms_ocpp_message
-[2018-05-22T09:19:39.279Z] AzureService | getMessage: test cpms_ocpp_message
-[2018-05-22T09:19:39.978Z] AzureService | getMessage: reports cpms_ocpp_message
-[2018-05-22T09:19:41.135Z] AzureService | getMessage: reports cpms_ocpp_message
-[2018-05-22T09:19:41.674Z] AzureService | getMessage: reports cpms_ocpp_message
-[2018-05-22T09:19:42.552Z] AzureService | getMessage: test cpms_ocpp_message
-[2018-05-22T09:19:42.991Z] AzureService | getMessage: test cpms_ocpp_message
-[2018-05-22T09:19:44.363Z] AzureService | getSubscriptionsByTopic: 
-[2018-05-22T09:19:47.055Z] AzureService | getMessage: archives charging_sites_delete
-[2018-05-22T09:19:53.625Z] AzureService | getSubscriptionsByTopic: 
-[2018-05-22T09:19:55.546Z] AzureService | getMessage: archives charge_session_in_progress
-[2018-05-22T09:19:58.281Z] AzureService | getMessage: archives charge_session_in_progress
-[2018-05-22T09:20:00.768Z] AzureService | getMessage: archives charge_session_in_progress
-[2018-05-22T09:21:47.067Z] AzureService | getMessage: archives charging_sites_delete
+[2018-05-30T10:42:59.309Z] APP STARTED[2018-05-30T10:42:59.319Z] Server started on 5001
+[2018-05-30T10:44:15.514Z] AzureService | getUserSubscriptions: 
+[2018-05-30T10:44:15.995Z] AzureService | getResourceGroups: 
+[2018-05-30T10:44:16.175Z] AzureService | getNamespaces: emobility-dev
+[2018-05-30T10:44:26.465Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T10:44:31.106Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T10:44:54.545Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T10:45:40.926Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T10:46:38.032Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T10:46:39.894Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T10:48:22.915Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T10:49:28.271Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T10:49:32.370Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T10:50:05.241Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T10:50:19.092Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T10:50:22.982Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T10:50:24.011Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T10:50:52.713Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T10:50:55.734Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T10:50:58.688Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T10:50:59.893Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T10:52:36.368Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T10:52:39.222Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T10:52:42.197Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T10:53:02.285Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T10:53:08.610Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T10:53:11.114Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T10:53:12.633Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T10:53:27.951Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T10:53:54.807Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T10:54:04.268Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T10:54:06.852Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:12.071Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:13.174Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:13.725Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:14.107Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:14.774Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:16.043Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:16.482Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:16.806Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:17.055Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:17.269Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:17.467Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:17.631Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:17.791Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:17.955Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:18.112Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:18.272Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:18.429Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:18.591Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:18.743Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:18.888Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:19.046Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:19.217Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:19.361Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:19.532Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:19.699Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:19.855Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:20.419Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:20.588Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:21.049Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:21.242Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:21.712Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:21.902Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:22.083Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:22.251Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:22.418Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:22.776Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:22.942Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:23.086Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:23.253Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:23.389Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:23.536Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:23.691Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:23.864Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:24.005Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:24.377Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:24.547Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:24.715Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:24.884Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:25.042Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:25.201Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:25.357Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:25.514Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:25.683Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:25.852Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:26.009Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:26.182Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:26.325Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:26.493Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:26.662Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:26.830Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:27.001Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:27.169Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:27.325Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:27.472Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:54:41.907Z] AzureService | getMessage: test cpms_ocpp_message_metervalues
+[2018-05-30T10:59:58.248Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T11:00:04.056Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:04:26.493Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T11:04:30.382Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:09:49.265Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T11:09:51.946Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:16:52.213Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:18:38.028Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T11:18:42.755Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T11:18:45.666Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:18:50.701Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:18:52.401Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:18:54.264Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:18:55.570Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:18:58.338Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:19:00.414Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:19:03.525Z] AzureService | getMessage: test cpms_ocpp_message
+[2018-05-30T11:20:26.182Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T11:21:28.158Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T11:21:30.862Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:21:56.915Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T11:21:58.559Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:22:54.987Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T11:22:56.835Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:23:44.671Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T11:23:46.974Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:24:02.297Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T11:24:55.929Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T11:24:59.491Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:25:37.376Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:25:38.479Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:25:41.630Z] AzureService | getMessage: archives charge_session_start_requested
+[2018-05-30T11:25:52.368Z] AzureService | getMessage: charging-profiles charge_session_start_requested
+[2018-05-30T11:25:58.044Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:26:01.608Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:26:04.685Z] AzureService | getMessage: charging-profiles charge_session_start_requested
+[2018-05-30T11:26:05.796Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:27:14.548Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T11:27:32.769Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T11:27:36.384Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:27:43.198Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:27:50.564Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:29:18.213Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T11:29:45.313Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T11:29:58.573Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T11:30:02.418Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:30:03.943Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:30:18.698Z] AzureService | login
+[2018-05-30T11:30:23.891Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-30T11:30:28.912Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-30T11:30:33.891Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-30T11:30:38.890Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-30T11:30:43.887Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-30T11:30:48.891Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-30T11:30:53.889Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-30T11:30:53.930Z] AzureService | getUserSubscriptions: 
+[2018-05-30T11:30:54.144Z] AzureService | getResourceGroups: 
+[2018-05-30T11:30:54.342Z] AzureService | getNamespaces: emobility-dev
+[2018-05-30T11:31:03.998Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-30T11:31:38.049Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:31:49.663Z] AzureService | getMessage: charging-profiles charge_session_error
+[2018-05-30T11:31:51.525Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:31:53.685Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T11:31:54.820Z] AzureService | getSubscriptionsByTopic: 

@@ -1,0 +1,60 @@
+.split-panel {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  .left-panel {
+    height: 100%;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+    color: $color-text-inverse;
+    background-color: $div-bg-extra-heavy;
+    .form-group {
+      padding: $padding-natural/2;
+      .form-control {
+        color: $color-text-inverse;
+      }
+    }
+    .section-head {
+      height: $height-headers;
+      padding: $padding-natural/2;
+      display: flex;
+      align-items: center;
+      h3 {
+        flex: 1;
+        font-size: $font-size-big;
+      }
+    }
+    .list-empty {
+      padding: $padding-natural/2;
+    }
+    .list {
+      a {
+        display: block;
+        border-bottom: 1px solid #343434;
+        padding: $padding-natural/2;
+        margin: 0;
+        color: $color-text-inverse;
+        &:hover,
+        &:focus {
+          background-color: $div-bg-heavy;
+          text-decoration: none;
+        }
+        &:active,
+        &.active {
+          background-color: $div-primary;
+        }
+      }
+    }
+  }
+  .content-panel {
+    height: 100%;
+    overflow: auto;
+    margin:0;
+    padding:0;
+    flex: 1;
+    .content-panel-inner {
+      padding: $padding-natural;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+#app-header {
+  display: flex;
+  //height: $height-headers/2;
+  background: linear-gradient(to right bottom, $div-primary, lighten($div-primary, 20%));
+  color: $color-text-inverse;
+  padding: $padding-natural;
+  align-items: baseline;
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.28);
+  h2 {
+
+    font-size: $font-size-big;
+    margin: 5px 0 0 0;
+  }
+  div.namespace{
+    flex: 1;
+    margin-left: $padding-natural;
+  }
+  a {
+    align-self: center;
+    margin-left: $padding-natural/2;
+  }
+}
