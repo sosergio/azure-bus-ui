@@ -1,7 +1,116 @@
-[2018-05-30T12:47:21.419Z] APP STARTED[2018-05-30T12:47:21.441Z] Server started on 5001
-[2018-05-30T12:47:33.966Z] AzureService | deleteSubscriptionToTopic: 9a932847-7c35-485e-bb5c-8994d756e8cd emobility-dev emobility-dev charge_session_started test
-[2018-05-30T12:47:36.423Z] AzureService | getSubscriptionsByTopic: 
-[2018-05-30T12:47:45.965Z] AzureService | addSubscriptionToTopic: 9a932847-7c35-485e-bb5c-8994d756e8cd emobility-dev emobility-dev charge_session_started sergio
-[2018-05-30T12:47:48.442Z] AzureService | getSubscriptionsByTopic: 
-[2018-05-30T12:47:54.232Z] AzureService | deleteSubscriptionToTopic: 9a932847-7c35-485e-bb5c-8994d756e8cd emobility-dev emobility-dev charge_session_started sergio
-[2018-05-30T12:47:54.958Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-30T13:55:02.397Z] APP STARTED[2018-05-30T13:55:02.433Z] Server started on 5001
+[2018-05-31T12:54:30.726Z] AzureService | login
+[2018-05-31T12:54:36.519Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:54:41.499Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:54:46.496Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:54:51.491Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:54:56.493Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:55:01.497Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:55:06.497Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:55:11.497Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:55:16.493Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:55:21.491Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:55:26.498Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:55:31.499Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:55:36.494Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:55:41.496Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:55:46.494Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:55:51.495Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:55:56.494Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:56:01.496Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:56:06.494Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:56:11.497Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:56:16.507Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:56:21.502Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:56:26.495Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:56:31.495Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:56:36.494Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:56:41.497Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:56:46.496Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:56:51.500Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:56:56.495Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:57:01.496Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:57:06.500Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:57:11.499Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:57:16.497Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:57:21.495Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:57:26.498Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:57:31.495Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:57:36.870Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:57:43.520Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T12:57:46.523Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:12:37.789Z] AzureService | login
+[2018-05-31T13:12:42.951Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:12:47.950Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:12:52.966Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:12:57.958Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:13:02.953Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:13:08.561Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:13:13.527Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:13:18.550Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:13:23.526Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:13:28.553Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:13:33.555Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:13:38.524Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:13:43.558Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:13:48.536Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:13:53.524Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:13:58.555Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:14:03.529Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:14:08.568Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:14:13.531Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:14:18.535Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:14:23.528Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:14:28.533Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:14:33.525Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:14:38.532Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:14:43.526Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:14:48.600Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:14:53.532Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:14:57.955Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:15:02.959Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:15:07.960Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:15:12.956Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:15:17.956Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:15:22.960Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:15:27.957Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:15:32.961Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:15:37.956Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:15:42.960Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:15:47.956Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:15:52.959Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:15:57.959Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:16:02.957Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:16:07.959Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:16:12.957Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:16:17.961Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:16:22.961Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:16:27.958Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:22:17.056Z] AzureService | login
+[2018-05-31T13:22:22.254Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:22:27.254Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:22:32.256Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:22:37.260Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:22:42.257Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:22:47.256Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:22:52.259Z] AzureService | getAccessTokenByLoginId: 
+[2018-05-31T13:22:52.301Z] AzureService | getUserSubscriptions: 
+[2018-05-31T13:22:52.456Z] AzureService | getResourceGroups: 
+[2018-05-31T13:22:52.624Z] AzureService | getNamespaces: emobility-dev
+[2018-05-31T13:23:29.752Z] AzureService | getUserSubscriptions: 
+[2018-05-31T13:23:30.049Z] AzureService | getResourceGroups: 
+[2018-05-31T13:23:30.304Z] AzureService | getNamespaces: emobility-dev
+[2018-05-31T13:23:43.904Z] AzureService | getUserSubscriptions: 
+[2018-05-31T13:23:44.099Z] AzureService | getResourceGroups: 
+[2018-05-31T13:23:44.211Z] AzureService | getNamespaces: emobility-dev
+[2018-05-31T13:24:13.660Z] AzureService | getUserSubscriptions: 
+[2018-05-31T13:24:13.926Z] AzureService | getResourceGroups: 
+[2018-05-31T13:24:14.142Z] AzureService | getNamespaces: emobility-dev
+[2018-05-31T13:24:23.717Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-31T13:24:28.275Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-31T13:24:32.258Z] AzureService | getUserSubscriptions: 
+[2018-05-31T13:24:32.449Z] AzureService | getResourceGroups: 
+[2018-05-31T13:24:32.598Z] AzureService | getNamespaces: emobility-dev
+[2018-05-31T13:24:37.828Z] AzureService | getAllTopics: emobility-dev emobility-dev
+[2018-05-31T13:24:42.463Z] AzureService | getSubscriptionsByTopic: 
+[2018-05-31T13:25:41.067Z] AzureService | getMessage: archives charging_sites_add

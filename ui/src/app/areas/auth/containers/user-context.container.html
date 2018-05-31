@@ -1,44 +1,47 @@
+<main class="hero-split">
+  <div class="hero-split-content">
 
-<main class="container-fluid">
-  <h2>Your Context</h2>
-  <hr>
-  <form>
-    <div class="row">
-      <div class="form-group col-xs-12 col-lg-8">
-        <label>SUBSCRIPTION</label>
-        <select class="form-control" (change)="onSubscriptionChanged($event.target.value)">
-          <option *ngFor="let s of userSubscriptions" [selected]="selectedSubscription == s.subscriptionId" [value]="s.subscriptionId">{{s.displayName}}</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="form-group col-xs-12 col-lg-8">
-        <label>RESOURCE GROUPS</label>
-        <select class="form-control" (change)="onResourceGroupChanged($event.target.value)">
-          <option *ngFor="let resourceGroup of resourceGroups" [selected]="selectedResourceGroup == resourceGroup.name" [value]="resourceGroup.name">{{resourceGroup.name}}</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="form-group col-xs-12 col-lg-8">
-        <label>NAMESPACE</label>
-        <select class="form-control" (change)="onNamespaceChanged($event.target.value)">
-          <option *ngFor="let namespace of namespaces" [selected]="selectedNamespace == namespace.name" [value]="namespace.name">{{namespace.name}}</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="form-group col-xs-12 col-lg-8">
-        <label>SERVICE BUS CONNECTION STRING</label>
-        <input class="form-control" type="text" [(ngModel)]="input.serviceBusConnectionString" name="serviceBusConnectionString">
-      </div>
-    </div>
+    <h2>Your Context</h2>
     <hr>
-    <div class="row">
-      <div class="form-group col-xs-12 col-lg-8">
-        <button class="button primary" [disabled]="!selectedNamespace" (click)="save()">
-          <span class="material-icons">done</span>Save</button>
+    <form>
+      <div class="row">
+        <div class="form-group col-xs-12">
+          <label>SUBSCRIPTION</label>
+          <select class="form-control" (change)="onSubscriptionChanged($event.target.value)">
+            <option *ngFor="let s of userSubscriptions" [selected]="selectedSubscription == s.subscriptionId" [value]="s.subscriptionId">{{s.displayName}}</option>
+          </select>
+        </div>
       </div>
-    </div>
-  </form>
+      <div class="row">
+        <div class="form-group col-xs-12">
+          <label>RESOURCE GROUPS</label>
+          <select class="form-control" (change)="onResourceGroupChanged($event.target.value)">
+            <option *ngFor="let resourceGroup of resourceGroups" [selected]="selectedResourceGroup == resourceGroup.name" [value]="resourceGroup.name">{{resourceGroup.name}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-xs-12">
+          <label>NAMESPACE</label>
+          <select class="form-control" (change)="onNamespaceChanged($event.target.value)">
+            <option *ngFor="let namespace of namespaces" [selected]="selectedNamespace == namespace.name" [value]="namespace.name">{{namespace.name}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-xs-12">
+          <label>SERVICE BUS CONNECTION STRING</label>
+          <input class="form-control" type="text" [(ngModel)]="input.serviceBusConnectionString" name="serviceBusConnectionString">
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="form-group col-xs-12">
+          <button class="button primary" [disabled]="!selectedNamespace" (click)="save()">
+            <span class="material-icons">done</span>Save</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="hero-split-no-content"></div>
 </main>

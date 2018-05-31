@@ -1,0 +1,32 @@
+.hero-split{
+  display: flex;
+  .hero-split-content{
+    padding:15px;
+    flex:3;
+  }
+  .hero-split-no-content{
+    flex:5;
+    display: none;
+    background-image:url('https://secure.aadcdn.microsoftonline-p.com/ests/2.1.7690.12/content/images/default_signin_illustration.png');
+    background-size: cover;
+  }
+}
+
+h2{
+  font-size:$font-size-huge;
+}
+
+@media #{$breakpoint-md} {
+  .hero-split{
+    .hero-split-no-content{
+      display: block;
+    }
+  }
+}
+@media #{$breakpoint-lg} {
+  .hero-split{
+    .hero-split-no-content{
+      display: block;
+    }
+  }
+}

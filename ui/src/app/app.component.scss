@@ -12,5 +12,6 @@ main {
 @media #{$breakpoint-lg} {}
 
 @import "./common/common";
+@import "./areas/auth/auth";
 @import "./areas/dashboard/dashboard";
 @import "./areas/app-header/app-header";
